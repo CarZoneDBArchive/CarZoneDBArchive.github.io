@@ -1,6 +1,6 @@
 Promise.all([
-  fetch(`https://carzonedb.github.io/assets/infojsons/cars.json?${Date.now()}`).then(res => res.json()),
-  fetch(`https://carzonedb.github.io/assets/infojsons/races.json?${Date.now()}`).then(res => res.json())
+  fetch(`https://carzonedbarchive.github.io/assets/infojsons/cars.json?${Date.now()}`).then(res => res.json()),
+  fetch(`https://carzonedbarchive.github.io/assets/infojsons/races.json?${Date.now()}`).then(res => res.json())
 ])
 .then(([carData, raceData]) => {
 
