@@ -347,7 +347,7 @@ async function addCommunityVotes(cars){
 // ===== LOAD CARS =====
 async function loadCars() {
   try {
-    const res = await fetch(`https://carzonedb.github.io/assets/infojsons/cars.json?${Date.now()}`);
+    const res = await fetch(`https://carzonedbarchive.github.io/assets/infojsons/cars.json?${Date.now()}`);
     if (!res.ok) throw new Error(`HTTP Error: ${res.status}`);
 
     const api     = await res.json();
